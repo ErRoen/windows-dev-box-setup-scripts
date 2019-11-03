@@ -12,5 +12,5 @@ choco install -y visualstudio2019-workload-manageddesktop
 
 choco install -y resharper-platform
 
-#Install-ChocolateyVsixPackage -PackageName "MyPackage" `
-#  -VsixUrl http://visualstudiogallery.msdn.microsoft.com/ea3a37c9-1c76-4628-803e-b10a109e7943/file/73131/1/AutoWrockTestable.vsix
+Install-ChocolateyVsixPackage -PackageName "AddNewFile" `
+  -VsixUrl https://marketplace.visualstudio.com/_apis/public/gallery/publishers/MadsKristensen/vsextensions/AddNewFile/3.5.134/vspackage
