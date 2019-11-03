@@ -45,7 +45,19 @@ choco install -y terraform
 write-host "Installing tools inside the WSL distro..."
 Ubuntu1804 run apt install ansible -y
 
+# Install VS and Extensions
 executeScript "VisualStudioSetup.ps1";
+
+# Pin Items to TaskBar
+Install-ChocolateyPinnedTaskBarItem "$env:programfiles\console\console.exe"
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
+
+# Update File Associations
+Install-ChocolateyFileAssociation ".txt" "$env:programfiles\Notepad++\notepad++.exe"
+Install-ChocolateyFileAssociation ".log" "$env:programfiles\Notepad++\notepad++.exe"
+Install-ChocolateyFileAssociation ".config" "$env:programfiles\Notepad++\notepad++.exe"
+Install-ChocolateyFileAssociation ".xml" "$env:programfiles\Notepad++\notepad++.exe"
+Install-ChocolateyFileAssociation ".ps1" "$env:programfiles\Notepad++\notepad++.exe"
 
 #--- reenabling critial items ---
 Enable-UAC
