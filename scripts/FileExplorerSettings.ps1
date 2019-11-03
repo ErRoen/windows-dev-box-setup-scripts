@@ -13,3 +13,5 @@ Set-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\
 #taskbar where window is open for multi-monitor
 Set-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name MMTaskbarMode -Value 2
 
+Disable-InternetExplorerESC
+Set-TaskbarOptions -Size Small -Dock Top -Combine Always
