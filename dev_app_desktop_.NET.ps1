@@ -27,16 +27,31 @@ executeScript "FileExplorerSettings.ps1";
 executeScript "RemoveDefaultApps.ps1";
 executeScript "CommonDevTools.ps1";
 
+executeScript "Browsers.ps1";
+
+executeScript "HyperV.ps1";
+RefreshEnv
+executeScript "WSL.ps1";
+RefreshEnv
+executeScript "Docker.ps1";
+
+choco install -y powershell-core
+choco install -y azure-cli
+Install-Module -Force Az
+choco install -y microsoftazurestorageexplorer
+choco install -y terraform
+
+# Install tools in WSL instance
+write-host "Installing tools inside the WSL distro..."
+Ubuntu1804 run apt install ansible -y
+
 #--- Tools ---
 #--- Installing VS and VS Code with Git
 # See this for install args: https://chocolatey.org/packages/VisualStudio2017Community
 # https://docs.microsoft.com/en-us/visualstudio/install/workload-component-id-vs-community
 # https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio#list-of-workload-ids-and-component-ids
-# visualstudio2017community
-# visualstudio2017professional
-# visualstudio2017enterprise
+choco install -y visualstudio2019professional --package-parameters="'--add Microsoft.VisualStudio.Component.Git'"
 
-choco install -y visualstudio2017community --package-parameters="'--add Microsoft.VisualStudio.Component.Git'"
 Update-SessionEnvironment #refreshing env due to Git install
 
 #--- UWP Workload and installing Windows Template Studio ---
