@@ -5,6 +5,7 @@
 Disable-UAC
 
 choco upgrade --yes chocolatey
+RefreshEnv
 
 # Get the base URI path from the ScriptToCall value
 $bstrappackage = "-bootstrapPackage"
