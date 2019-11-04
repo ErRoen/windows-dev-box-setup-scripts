@@ -17,7 +17,7 @@ choco install -y postman
 #choco install -y soapui
 choco install -y smtp4dev
 
-choco install -y sql-server-management-studio
+#choco install -y sql-server-management-studio
 
 # VSCode plugins ???
 
