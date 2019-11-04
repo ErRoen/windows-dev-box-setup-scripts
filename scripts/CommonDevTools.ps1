@@ -10,6 +10,7 @@ choco install -y sysinternals
 choco install -y notepadplusplus
 #choco install -y dotpeek
 choco install -y logparser
+choco install -y logparserstudio
 choco install -y fiddler
 choco install -y beyondcompare
 choco install -y paint.net
