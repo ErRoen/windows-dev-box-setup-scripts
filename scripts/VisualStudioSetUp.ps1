@@ -2,7 +2,7 @@
 # See this for install args: https://chocolatey.org/packages/VisualStudio2017Community
 # https://docs.microsoft.com/en-us/visualstudio/install/workload-component-id-vs-community
 # https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio#list-of-workload-ids-and-component-ids
-#choco install -y visualstudio2019professional #--package-parameters="--add Microsoft.VisualStudio.Component.Git"
+choco install -y visualstudio2019professional #--package-parameters="--add Microsoft.VisualStudio.Component.Git"
 
 #Update-SessionEnvironment #refreshing env due to Git install
 
