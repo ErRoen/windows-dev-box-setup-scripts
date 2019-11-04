@@ -45,11 +45,14 @@ Install-Module -Force Az
 choco install -y microsoftazurestorageexplorer
 choco install -y terraform
 choco install -y servicebusexplorer
+RefreshEnv
 
 # Install VS and Extensions
 executeScript "VisualStudioSetUp.ps1";
+RefreshEnv
 
 choco install -y sql-server-management-studio
+RefreshEnv
 
 # Pin Items to TaskBar
 Install-ChocolateyPinnedTaskBarItem "$env:programfiles\console\console.exe"
