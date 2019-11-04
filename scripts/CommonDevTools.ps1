@@ -8,13 +8,13 @@ choco install -y sysinternals
 
 # Dev tools
 choco install -y notepadplusplus
-choco install -y dotpeek
+#choco install -y dotpeek
 choco install -y logparser
 choco install -y fiddler
 choco install -y beyondcompare
 choco install -y paint.net
 choco install -y postman
-choco install -y soapui
+#choco install -y soapui
 choco install -y smtp4dev
 
 choco install -y sql-server-management-studio
