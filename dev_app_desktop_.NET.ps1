@@ -4,6 +4,8 @@
 
 Disable-UAC
 
+choco upgrade --yes chocolatey
+
 # Get the base URI path from the ScriptToCall value
 $bstrappackage = "-bootstrapPackage"
 $helperUri = $Boxstarter['ScriptToCall']
