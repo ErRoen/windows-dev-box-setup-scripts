@@ -13,8 +13,8 @@ choco install -y logparserstudio
 choco install -y fiddler
 choco install -y beyondcompare
 choco install -y paint.net
-choco install -y postman
-choco install -y soapui
+#choco install -y postman
+#choco install -y soapui
 choco install -y smtp4dev
 
 # VSCode plugins ???
