@@ -4,9 +4,9 @@
 
 Disable-UAC
 
-Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-choco upgrade --yes chocolatey
-RefreshEnv
+#Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+#choco upgrade --yes chocolatey
+#RefreshEnv
 
 # Get the base URI path from the ScriptToCall value
 $bstrappackage = "-bootstrapPackage"
