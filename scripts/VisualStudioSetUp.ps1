@@ -6,9 +6,11 @@ choco install -y visualstudio2019professional --package-parameters="'--add Micro
 
 Update-SessionEnvironment #refreshing env due to Git install
 
-#--- UWP Workload and installing Windows Template Studio ---
+#--- Workloads and installing Windows Template Studio ---
 choco install -y visualstudio2019-workload-azure
-choco install -y visualstudio2019-workload-manageddesktop
+choco install -y visualstudio2019-workload-netweb
+choco install -y visualstudio2019-workload-netcoretools
+choco install -y visualstudio2019-workload-data
 
 #choco install -y resharper-platform
 #choco install resharper --pre 
