@@ -27,7 +27,7 @@ executeScript "FileExplorerSettings.ps1";
 executeScript "RemoveDefaultApps.ps1";
 executeScript "Browsers.ps1";
 
-#executeScript "HyperV.ps1";
+executeScript "HyperV.ps1";
 RefreshEnv
 
 choco install dotnet4.7.2
