@@ -14,4 +14,4 @@ Set-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\
 Set-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name MMTaskbarMode -Value 2
 
 Disable-InternetExplorerESC
-Set-TaskbarOptions -Size Small -Dock Top -Combine Always
+Set-TaskbarOptions -Size Small -Dock Bottom -Combine Always
