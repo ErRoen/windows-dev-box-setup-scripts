@@ -16,5 +16,5 @@
 choco install resharper --pre 
 choco install dotpeek --pre 
 
-#Install-ChocolateyVsixPackage -PackageName "AddNewFile" `
-#  -VsixUrl https://marketplace.visualstudio.com/_apis/public/gallery/publishers/MadsKristensen/vsextensions/AddNewFile/3.5.134/vspackage
+Install-ChocolateyVsixPackage -PackageName "AddNewFile" `
+  -VsixUrl https://marketplace.visualstudio.com/_apis/public/gallery/publishers/MadsKristensen/vsextensions/AddNewFile/3.5.134/vspackage
