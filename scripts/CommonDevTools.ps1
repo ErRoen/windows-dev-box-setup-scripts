@@ -22,7 +22,7 @@ choco install -y smtp4dev
 # Utilities
 choco install -y webpi
 choco install -y filezilla
-choco install -y hashcheck
+#choco install -y hashcheck
 choco install -y windirstat
 choco install -y foxitreader
 choco install -y divvy
